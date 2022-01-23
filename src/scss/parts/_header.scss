@@ -1,0 +1,70 @@
+header {
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  padding: 1em 0;
+  a.logo {
+    background-image: url("../assets/images/algoritm.logo.svg");
+    display: inline-block;
+    height: 3.8rem;
+    font-size: 2.5rem;
+    background-size: 40%;
+    font-family: $altFont;
+    color: $babyPowder;
+    background-repeat: no-repeat;
+    padding: .01em 0 0 1.5em;
+    span{
+      font-family: $baseFont;
+      font-size: .3em;
+      display: block;
+      margin-top: -1rem;
+      text-align: right;
+      color: $greenPigment;
+    }
+  }
+  nav {
+    li > a {
+      color: $babyPowder;
+      background-color: $greenPigment;
+
+      font-weight: 400;
+      display: inline-block;
+
+      padding: .4em .5em;
+      border-radius: .1em;
+      &:hover {
+        color: $greenPigment;
+        background-color: $babyPowder;
+      }
+    }
+  }
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    height:30em;
+    padding-top: 5em;
+    .left {
+      width: 50%;
+      display: flex;
+      float-wrap: wrap;
+      flex-direction: column;
+      justify-content: center;
+      p {
+        padding-top: 1em;
+      }
+
+    }
+
+    .right {
+      width: 50%;
+      background-image: url("https://via.placeholder.com/800/2E9942.svg/fff");
+      background-position: right center;
+      background-size: contain;
+      background-repeat: no-repeat;
+
+    }
+  }
+}

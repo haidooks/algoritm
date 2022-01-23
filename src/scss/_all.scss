@@ -1,0 +1,85 @@
+@use "sass:list";
+@use "sass:math";
+html {
+  font-family: $baseFont;
+  font-size: 16px;
+  @include md {
+    font-size: 18px;
+  }
+  @include lg {
+    font-size: 20px;
+  }
+  color: $babyPowder;
+}
+
+body {
+  background-color: $oxfordBlue;
+}
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+#intro {
+  padding: 3em 0;
+  div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    span {
+      background-color: $babyPowder;
+      color: $oxfordBlue;
+      font-size: .8rem;
+      width: 25%;
+      padding: 1em;
+      display: flex;
+      align-items: center;
+      border-radius: .1em;
+      i {
+        display: inline-block;
+        border-radius: .1em;
+        background-color: $spaceCadet;
+        padding: .2em;
+        color: $babyPowder;
+      }
+      &:nth-of-type(2) {
+        width: 28%;
+      }
+      i {
+        font-size: 2em;
+      }
+      em {
+        display: inline-block;
+        padding-left: 1em;
+      }
+    }
+  }
+}
+
+#why {
+  min-height: 100vh;
+  .why {
+    height: 30vh;
+    display: flex;
+    margin-top: 5em;
+    &:nth-of-type(2) {
+      flex-direction: row-reverse;
+      h2, p{
+        padding-left: 2rem;
+      }
+    }
+    div {
+      width: 50%;
+
+      &.right{
+        background-image: url("https://via.placeholder.com/800/2E9942.svg/fff");
+        background-position: right center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+    }
+
+  }
+}
+
